@@ -65,7 +65,7 @@ class ConfigStore(object):
         self._config_tree.locked = value
 
     def clear(self):
-        self.attributes.clear()
+        self._attributes.clear()
 
     def update_dict(self, d):
         for key, value in d.iteritems():
